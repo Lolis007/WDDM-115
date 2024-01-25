@@ -1,6 +1,6 @@
 /* Setting up the profile div*/
 .profile {
-    display: grid;
+    display: block;
     grid-template-rows: 6rem 3rem 3rem 1fr;
     grid-template-columns: 1fr;
 }
@@ -30,10 +30,12 @@ h1 {
     overflow: hidden;
 }
 
+
 .profilePicture img,
 .coverPicture img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%; 
+    object-fit: contain;
     border-bottom: 2px solid #ddd;
 }
 
